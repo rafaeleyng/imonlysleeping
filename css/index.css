@@ -11,20 +11,13 @@ video {
   width: auto;
   height: auto;
   z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background: url('./poster.png') no-repeat;
+  background: url('../img/poster.png') no-repeat;
   background-size: cover;
-  transition: 1s opacity;
-}
-.stopfade {
-  opacity: .5;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  margin-top: 0;
-  letter-spacing: .3rem;
+  color: #fff;
 }
 
 a {
@@ -43,7 +36,7 @@ a:hover{
 }
 @media screen and (max-device-width: 800px) {
   html {
-    background: url(./poster.png) #000 no-repeat center center fixed;
+    background: url(../img/poster.png) #000 no-repeat center center fixed;
   }
   #bgvid {
     display: none;

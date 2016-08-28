@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="./index.css">
+  <meta charset="utf-8">
+  <title>I'm only sleeping</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <video poster="./poster.png" id="bgvid" playsinline autoplay muted loop>
-    <source src="./video.mp4" type="video/mp4" />
+
+  <div class="container">
+    <section class="header">
+      <h1 class="title">I'm only sleeping</h1>
+    </section>
+  </div>
+
+  <video class="stopfade" poster="./img/poster.png" id="bgvid" playsinline autoplay muted loop>
+    <source src="./video/video.mp4" type="video/mp4" />
   </video>
+
   <audio autoplay>
-    <source src="./music.mp3" type="audio/mp3" />
+    <source src="./audio/music.mp3" type="audio/mp3" />
   </audio>
   <script type="text/javascript" src="./index.js"></script>
 </body>
