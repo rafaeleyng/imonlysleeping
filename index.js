@@ -13,6 +13,7 @@ var togglePlaying = function(play) {
     audio.pause()
     pauseButton.innerHTML = 'Play'
   }
+  isPlaying = play
 }
 
 pauseButton.addEventListener('click', function() {
