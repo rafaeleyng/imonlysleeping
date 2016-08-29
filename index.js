@@ -1,9 +1,10 @@
 var video = document.querySelector('#sleeping-video')
 var audio = document.querySelector('#sleeping-audio')
 var pauseButton = document.querySelector('#play-pause')
+var isPlaying = true
 
-var togglePlaying = function(options) {
-  if (options.force || (video.paused && video.paused)) {
+var togglePlaying = function(play) {
+  if (play) {
     video.play()
     audio.play()
     pauseButton.innerHTML = 'Pause'
@@ -14,10 +15,12 @@ var togglePlaying = function(options) {
   }
 }
 
-pauseButton.addEventListener('click', togglePlaying, true)
+pauseButton.addEventListener('click', function() {
+  togglePlaying(!isPlaying)
+}, true)
 
 audio.addEventListener('ended', function() {
   pauseButton.innerHTML = 'Play'
 })
 
-togglePlaying({force: true})
+togglePlaying(true)
