@@ -67,7 +67,15 @@ a.button:hover, a.button:active, a.button:focus {
   margin:20px auto;
 }
 
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 70px;
+  }
+}
 @media screen and (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+  }
   div {
     width:70%;
   }
