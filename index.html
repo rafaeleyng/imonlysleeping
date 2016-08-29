@@ -13,19 +13,22 @@
 </head>
 <body>
 
-  <div class="container">
-    <section class="header">
-      <h1 class="title">I'm only sleeping</h1>
-    </section>
-  </div>
+  <section>
+    <div class="text-container">
+      <h1>I'm only sleeping</h1>
+      <h3>A sleepy experience</h3>
+      <a id="play-pause" class="button" href="#">Pause</a>
+    </div>
+  </section>
 
-  <video class="stopfade" poster="./img/poster.png" id="bgvid" playsinline autoplay muted loop>
+  <video id="sleeping-video" poster="./img/poster.png" playsinline autoplay muted>
     <source src="./video/video.mp4" type="video/mp4" />
   </video>
 
-  <audio autoplay>
+  <audio id="sleeping-audio" autoplay>
     <source src="./audio/music.mp3" type="audio/mp3" />
   </audio>
+
   <script type="text/javascript" src="./index.js"></script>
 </body>
 </html>
