@@ -21,6 +21,7 @@ pauseButton.addEventListener('click', function() {
 }, true)
 
 audio.addEventListener('ended', function() {
+  video.pause()
   pauseButton.innerHTML = 'Play'
 })
 
