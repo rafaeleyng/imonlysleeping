@@ -32,7 +32,6 @@ section {
   vertical-align: middle;
   display: table-cell;
   text-align: center;
-
 }
 
 h1 {
@@ -48,7 +47,7 @@ h1, h3 {
 }
 
 a.button {
-  margin: 20px auto 0;
+  margin: 25px auto 15px;
   border-color: #fff;
   color: #fff;
 }
