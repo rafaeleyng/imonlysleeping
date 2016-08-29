@@ -24,4 +24,4 @@ audio.addEventListener('ended', function() {
   pauseButton.innerHTML = 'Play'
 })
 
-togglePlaying(true)
+togglePlaying(!(audio.paused && video.paused))
